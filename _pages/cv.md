@@ -11,30 +11,36 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.Sc. in Wuhan University, 2022
+* Ph.D. in Fudan University, 2027 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Oct. 2021‑Apr. 2022: Hardware Engineer Intern
+  * Zhcltech Technology Co., Ltd 
+  * Duties included: Participated in the design of a CSR Ring and a small SoC of a high-performance AI training and inference chip which is tapped out in TSMC 12nm.
+  * Supervisor: Hanxun Zheng
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
+* Aug. 2023‑Jan. 2024: Research Intern
+  * Ant Research, Ant Group
+  * Duties included: Investigating circuit optimizations for the pipeline‑based Number Theoretic Transform and optimizing the design of MDC‑type NTT
+from a hardware architecture perspective
+  * Supervisor: Shoumeng Yan
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* (System) Verilog HDL
+* Python
+* C++
+* Vivado
+* VCS
+* Verdi
+* Design Compiler
+* English (IELTS): overall 7.5
+  * Listening 8.5
+  * Reading 8
+  * Writing 6.5
+  * Speaking 6
 
 Publications
 ======
@@ -54,6 +60,3 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
