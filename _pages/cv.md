@@ -22,7 +22,7 @@ Work experience
   * Supervisor: Hanxun Zheng
 
 * Aug. 2023‑Jan. 2024: Research Intern
-  * Ant Research, Ant Group
+  * [Ant Research, Ant Group](https://www.antgroup.com/)
   * Duties included: Investigating circuit optimizations for the pipeline‑based Number Theoretic Transform and optimizing the design of MDC‑type NTT
 from a hardware architecture perspective
   * Supervisor: Shoumeng Yan
