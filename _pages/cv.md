@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.Sc. in Wuhan University, 2022
+* B.E. in Wuhan University, 2022
 * Ph.D. in Fudan University, 2027 (expected)
 
 Work experience
