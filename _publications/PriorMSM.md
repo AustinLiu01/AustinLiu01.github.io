@@ -13,4 +13,3 @@ Abstract: Multi-scalar multiplication (MSM) is a computationally intensive task 
 
 [Download paper here](http://academicpages.github.io/files/PriorMSM.pdf)
 
-Recommended citation: Liu, Changxu, Hao Zhou, Patrick Dai, Li Shang, and Fan Yang. "Priormsm: An efficient acceleration architecture for multi-scalar multiplication." ACM Transactions on Design Automation of Electronic Systems 29, no. 5 (2024): 1-26.
