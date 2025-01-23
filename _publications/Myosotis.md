@@ -5,7 +5,7 @@ permalink: /publication/Myosotis
 date: 2024-12-24
 venue: 'IEEE TRANSACTIONS ON COMPUTER-AIDED DESIGN OF INTEGRATED CIRCUITS AND SYSTEMS'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10818748/'
-citation: '**Liu, Changxu**, Hao Zhou, Lan Yang, Zheng Wu, Patrick Dai, Yinlong Li, Shiyong Wu, and Fan Yang. "Myosotis: An Efficiently Pipelined and Parameterized Multi-Scalar Multiplication Architecture via Data Sharing." IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (2024).'
+citation: 'Liu, Changxu, Hao Zhou, Lan Yang, Zheng Wu, Patrick Dai, Yinlong Li, Shiyong Wu, and Fan Yang. "Myosotis: An Efficiently Pipelined and Parameterized Multi-Scalar Multiplication Architecture via Data Sharing." IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (2024).'
 ---
 
 **Abstract**: Zero-knowledge proof (ZKP) is a widely used privacy-preserving technology, where Multi-Scalar Multiplication (MSM) accounts for over 70% of the computational workload. The acceleration of MSM can enhance the overall performance of ZKP, making it a focal point of community attention. However, in practical applications involving the deployment of multiple MSM accelerators, existing designs often overlook strategies for
