@@ -26,4 +26,4 @@ area and latency. On the other hand, Myosotis with three window
 MSMs and two PADD units decreases latency by 43% and
 bandwidth by 17%, with only a 9% area increase.
 
-[Download paper here](http://AustinLiu01.github.io/files/Myosotis_An_Efficiently_Pipeline…rchitecture_via_Data_Sharing.pdf)
+[Download paper here](http://AustinLiu01.github.io/files/Myosotis.pdf)
