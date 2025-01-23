@@ -10,4 +10,4 @@ citation: 'Liu, Changxu, Danqing Tang, Jie Song, Hao Zhou, Shoumeng Yan, and Fan
 ---
 Abstract: In privacy-preserving applications like Post-Quantum Cryptography (PQC) and Fully Homomorphic Encryption (FHE), polynomial multiplication is common, and the Number Theoretic Transform (NTT) is a key algorithm for reducing its complexity. In this paper, we present HMNTT, a highly efficient MDC-NTT architecture. Utilizing the four-step NTT algorithm and a pipelined transpose module, HMNTT offers a highly efficient and scalable architecture for handling NTT with large degrees. We optimize the processing element (PE) to alleviate backpressure and data conflicts in data flow. Leveraging FPGA characteristics, we construct a modular multiplication module to reduce resource usage and improve operating frequency. Evaluation results indicate that HMNTT achieves an average of 2.34× and 1.26× reduction in Area-Time Product compared to the latest pipelined NTT architectures.
 
-[Download paper here](http://academicpages.github.io/files/HMNTT.pdf)
+[Download paper here](http://AustinLiu01.github.io/files/HMNTT.pdf)
