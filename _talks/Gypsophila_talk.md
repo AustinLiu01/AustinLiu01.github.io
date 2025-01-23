@@ -1,5 +1,5 @@
 ---
-title: “Gypsophila: A Scalable and Bandwidth-Optimized Multi-Scalar Multiplication Architecture"
+title: "Gypsophila: A Scalable and Bandwidth-Optimized Multi-Scalar Multiplication Architecture"
 collection: talks
 type: "Talk"
 permalink: /talks/Gypsophila_talk
