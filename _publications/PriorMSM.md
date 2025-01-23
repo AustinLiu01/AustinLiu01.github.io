@@ -3,7 +3,7 @@ title: "PriorMSM: An Efficient Acceleration Architecture for Multi-Scalar Multip
 collection: publications
 permalink: /publication/PriorMSM
 excerpt: 'Abstract: Multi-scalar multiplication (MSM), crucial for zero-knowledge proof (ZKP), is computationally intensive, and this paper introduces PriorMSM, an efficient acceleration architecture that utilizes a Priority-Based Scheduling Mechanism (PBSM) and a parallel bucket aggregation algorithm to improve performance. Evaluations show that PriorMSM achieves up to 10.9× speedup over previous hardware implementations and 3.9× over GPU implementations.'
-date: 2024-08
+date: 2024-08-01
 venue: 'ACM Trans. Des. Autom. Electron. Syst., Vol. 29, No. 5, Article 77'
 paperurl: 'https://dl.acm.org/doi/10.1145/3678006'
 citation: 'Liu, Changxu, Hao Zhou, Patrick Dai, Li Shang, and Fan Yang. "Priormsm: An efficient acceleration architecture for multi-scalar multiplication." ACM Transactions on Design Automation of Electronic Systems 29, no. 5 (2024): 1-26.'
