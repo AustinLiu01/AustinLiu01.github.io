@@ -25,16 +25,17 @@ Work experience
   * [Ant Research, Ant Group](https://www.antgroup.com/)
   * Duties included: Investigating circuit optimizations for the pipeline‑based Number Theoretic Transform and optimizing the design of MDC‑type NTT
 from a hardware architecture perspective
-  * Supervisor: Shoumeng Yan
+  * Supervisor: [Shoumeng Yan](https://www.linkedin.com/in/shoumengyan/)
 
 Skills
 ======
 * (System) Verilog HDL
 * Python
-* C++
+* C/C++
 * Vivado
 * VCS
 * Verdi
+* Keil
 * Design Compiler
 * English (IELTS): overall 7.5
   * Listening 8.5
