@@ -3,7 +3,6 @@ title: "HMNTT: A Highly Efficient MDC-NTT Architecture for
 Privacy-preserving Applications"
 collection: publications
 permalink: /publication/HMNTT
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2024-06
 paperurl: 'https://dl.acm.org/doi/abs/10.1145/3649476.3658734'
 citation: 'Liu, Changxu, Danqing Tang, Jie Song, Hao Zhou, Shoumeng Yan, and Fan Yang. "HMNTT: A Highly Efficient MDC-NTT Architecture for Privacy-preserving Applications." In Proceedings of the Great Lakes Symposium on VLSI 2024, pp. 7-12. 2024.'
