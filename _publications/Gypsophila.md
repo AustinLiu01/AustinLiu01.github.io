@@ -2,7 +2,7 @@
 title: "Gypsophila: A Scalable and Bandwidth-Optimized Multi-Scalar Multiplication Architecture"
 collection: publications
 permalink: /publication/Gypsophila
-date: 2024-07-23
+date: 2024-06-22
 venue: 'Proceedings of the 61st ACM/IEEE Design Automation Conference'
 paperurl: 'https://dl.acm.org/doi/10.1145/3649329.3658259'
 citation: 'Liu, Changxu, Hao Zhou, Lan Yang, Jiamin Xu, Patrick Dai, and Fan Yang. "Gypsophila: A scalable and bandwidth-optimized multi-scalar multiplication architecture." In Proceedings of the 61st ACM/IEEE Design Automation Conference, pp. 1-6. 2024.'
