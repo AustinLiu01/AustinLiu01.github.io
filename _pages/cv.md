@@ -26,6 +26,10 @@ Work experience
   * Duties included: Investigating circuit optimizations for the pipeline‑based Number Theoretic Transform and optimizing the design of MDC‑type NTT
 from a hardware architecture perspective
   * Supervisor: [Shoumeng Yan](https://www.linkedin.com/in/shoumengyan/)
+ 
+* Jun. 2025- Now: Applied Research Intern, Project Up (青云计划)
+  * [Technology and Engineering Group, Tencent](https://www.tencent.com/zh-cn/)
+  * Duties included: TBD
 
 Skills
 ======
