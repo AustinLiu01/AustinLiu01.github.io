@@ -4,6 +4,6 @@ collection: talks
 type: "Talk"
 permalink: /talks/Gypsophila_talk
 venue: "Design Automation Conference 2024"
-date: 2024-07-26
+date: 2024-06-26
 location: "San Francisco, California"
 ---
