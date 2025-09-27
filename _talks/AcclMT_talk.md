@@ -4,6 +4,6 @@ collection: talks
 type: "Talk"
 permalink: /talks/AcclMT_talk
 venue: "Design Automation Conference 2025"
-date: 2025-06-24
+date: 2025-06-25
 location: "San Francisco, California"
 ---
