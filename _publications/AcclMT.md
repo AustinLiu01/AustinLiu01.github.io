@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/AcclMT
 date: 2025-06-22
 venue: 'Proceedings of the 62nd ACM/IEEE Design Automation Conference'
-paperurl: Waiting Process...
+paperurl: https://ieeexplore.ieee.org/document/11132911/
 citation: 'Changxu Liu, Hao Zhou, Lan Yang, Yifei Feng, Zheng Wu, Zhuoyuan Yang, Yinlong Li, Shiyong Wu and Fan Yang. "AcclMT: A Highly Resource-Efficient and Flexible Poseidon Hash-Based Merkle Tree Architecture." In Proceedings of the 62nd ACM/IEEE Design Automation Conference, pp. 1-6. 2025.'
 ---
 
