@@ -26,7 +26,7 @@ Work experience
 from a hardware architecture perspective
   * Supervisor: [Shoumeng Yan](https://www.linkedin.com/in/shoumengyan/)
  
-* Jun. 2025- Now: Applied Research Intern, Project Up (青云计划)
+* Jun. 2025- Nov. 2025: Applied Research Intern, Project Up (青云计划)
   * [Technology and Engineering Group, Tencent](https://www.tencent.com/zh-cn/)
   * Duties included: Conduct research on domestic and international AI chip architectures and implementation methods. Optimize inference performance of in-house AI models.
 
