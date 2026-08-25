@@ -14,21 +14,11 @@ Education
 * B.E. in Wuhan University, 2022
 * Ph.D. in Fudan University, 2027 (expected)
 
-Work experience
+Intern experience
 ======
-* Oct. 2021‑Apr. 2022: Hardware Engineer Intern
-  * Zhcltech Technology Co., Ltd 
-  * Duties included: Participated in the design of a CSR Ring and a small SoC of a high-performance AI training and inference chip which is tapped out in TSMC 12nm.
-
-* Aug. 2023‑Jan. 2024: Research Intern
-  * [Ant Research, Ant Group](https://www.antgroup.com/)
-  * Duties included: Investigating circuit optimizations for the pipeline‑based Number Theoretic Transform and optimizing the design of MDC‑type NTT
-from a hardware architecture perspective
-  * Supervisor: [Shoumeng Yan](https://www.linkedin.com/in/shoumengyan/)
- 
-* Jun. 2025- Nov. 2025: Applied Research Intern, Project Up (青云计划)
-  * [Technology and Engineering Group, Tencent](https://www.tencent.com/zh-cn/)
-  * Duties included: Conduct research on domestic and international AI chip architectures and implementation methods. Optimize inference performance of in-house AI models.
+* Jun. 2025 - Nov. 2025: AI Hardware Research Solution Intern, Tencent
+* Dec. 2025 - May 2026: AI ASIC Design Intern, ByteDance
+* May. 2026 - Now: AI Infra summer camp Intern, Baidu
 
 Skills
 ======
