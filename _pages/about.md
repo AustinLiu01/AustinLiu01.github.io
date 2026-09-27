@@ -12,7 +12,7 @@ I'm a fifth-year Ph.D. Candidate from [School of Microelectronics](https://sme.f
 
 I am very fortunate to be advised by [Prof. Fan Yang](https://ephonic.github.io/) of CAD Lab from [School of Microelectronics](https://sme.fudan.edu.cn/), [Fudan University](https://www.fudan.edu.cn/). Before that, I received my bachelor's degree from [Wuhan University](https://www.whu.edu.cn/), Hubei, P.R.C. in 2022. You can visit my [Google Scholar homepage](https://scholar.google.com/citations?user=M0BekPkAAAAJ&hl=en).
 
-I am currently an AI Infrastructure Summer Camp intern with the Baige (百舸) Team at Baidu, where I focus on optimizing LLM inference systems for low latency and high throughput on NVIDIA GPGPU platforms. Previously, I interned with the AI ​​chip design team at ByteDance and participated in Tencent’s Project Up (青云计划) as an intern specializing in AI hardware acceleration solutions. My work centers on optimizing inference systems for LLMs and developing inference frameworks and engines. I am currently seeking employment opportunities with a start date in the fall of 2027.
+I was an AI infrastructure summer camp intern with the Baige AI Team at Baidu-ACG, where I focused on optimizing LLM inference systems for low latency and high throughput on NVIDIA GPGPU platforms. More previously, I interned with the AI ​​ASIC design team at ByteDance-PicoHeart and was a Project Up (青云计划) intern at Tencent-TEG specialized in AI hardware acceleration solutions. My work centers on optimizing inference systems for LLMs and developing inference frameworks and engines. I am currently seeking employment opportunities with a start date in the fall of 2027.
 
 
 
