@@ -21,8 +21,9 @@ author:
 
 visitor_stats:
   enabled: true
-  # Public widget ID from ClustrMaps; leave empty until a widget is created.
-  clustrmaps_id: ""
+  # Public image and statistics URLs from a Flag Counter map's embed code.
+  flagcounter_image_url: https://s05.flagcounter.com/map/5VwO/size_m/txt_24648B/border_FFFFFF/pageviews_0/viewers_3/flags_0/
+  flagcounter_stats_url: https://info.flagcounter.com/5VwO
 
 include:
   - _pages

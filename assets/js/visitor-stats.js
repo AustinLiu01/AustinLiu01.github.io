@@ -34,14 +34,30 @@
   document.head.appendChild(counter);
 
   const map = root.querySelector('[data-visitor-map]');
-  if (map && root.dataset.mapId) {
-    const widget = document.createElement('script');
-    widget.id = 'clustrmaps';
-    const url = new URL('https://clustrmaps.com/map_v2.js');
-    url.search = new URLSearchParams({d: root.dataset.mapId, w: 'a', cl: '24648b', co: 'ffffff'});
-    widget.src = url.href;
-    widget.async = true;
-    widget.onerror = () => { map.textContent = 'Visitor map is temporarily unavailable.'; };
-    map.appendChild(widget);
+  if (map) {
+    const mapStatus = map.querySelector('[data-map-status]');
+    const link = document.createElement('a');
+    link.href = map.dataset.statsUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    const image = document.createElement('img');
+    image.alt = 'World map showing visitors by country — Flag Counter';
+    image.decoding = 'async';
+    const mapTimeout = setTimeout(() => {
+      mapStatus.textContent = 'Visitor map is temporarily unavailable.';
+    }, 12000);
+    image.onload = () => {
+      clearTimeout(mapTimeout);
+      mapStatus.textContent = '';
+    };
+    image.onerror = () => {
+      clearTimeout(mapTimeout);
+      link.hidden = true;
+      mapStatus.textContent = 'Visitor map is temporarily unavailable.';
+    };
+    // Load only after the live-site check above; local previews never count.
+    image.src = map.dataset.imageUrl;
+    link.appendChild(image);
+    map.appendChild(link);
   }
 })();

@@ -84,12 +84,18 @@ _config.dev.yml   本地预览配置
 开发构建、localhost 和其他域名的预览均不计数。服务不可用时显示提示；延迟返回的数据可恢复显示。
 此前使用的 `cdn.busuanzi.cc` 接口缺少 CORS 响应头，已切换服务，两个服务的历史统计不互通。
 
-地域地图使用 ClustrMaps，需要为自己的正式网址生成组件：
+地域地图改用 [Flag Counter](https://www.flagcounter.com/) 的图片式世界地图，无需加载服务商的脚本：
 
-1. 在 [ClustrMaps](https://clustrmaps.com/) 为 `https://austinliu01.github.io` 创建组件并获取嵌入代码。
-2. 取出 `map_v2.js?d=...` 的 `d` 参数，填入 `_config.yml` 的 `visitor_stats.clustrmaps_id`。
-   这是公开的组件 ID，不是账号密码。
-3. 重新构建并部署。ID 为空时不显示地图，也不会请求 ClustrMaps。
+1. 在官网选择 **Flag Map**，设置地图尺寸和颜色，创建免费组件并获取 HTML 嵌入代码。
+2. 将嵌入代码中图片的 `src` 填入 `_config.yml` 的 `visitor_stats.flagcounter_image_url`，
+   链接的 `href` 填入 `visitor_stats.flagcounter_stats_url`；均使用 `https://` 地址。
+   两者都是公开的组件地址，不是账号密码。组件创建后请保存嵌入代码。
+3. 重新构建并部署。任一地址为空时不显示地图，也不会请求 Flag Counter。
+
+地图按国家／地区汇总，从启用后开始累计，不能追溯此前的访问。
+它和不蒜子分别计数，统计口径不同，数字不一定一致。
+图片同样仅在正式站点加载，本地预览不会计数；加载失败时显示提示，延迟成功后可恢复。
+本网站不再加载 ClustrMaps。未来迁移域名时，仍需更新网站 `url`，以通过正式域名检查。
 
 `visitor_stats.enabled: false` 可关闭外部统计。地域由服务商根据 IP 估算；
 页面不展示单个访客的原始 IP。正式站点加载统计时会向相应服务商发送访问请求。
