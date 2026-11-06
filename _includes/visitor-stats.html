@@ -2,9 +2,9 @@
 {% if jekyll.environment == 'production' and site.visitor_stats.enabled %}{% assign stats_live = true %}{% endif %}
 <aside class="visitor-stats" aria-label="Visitor statistics" data-visitor-stats data-enabled="{{ stats_live }}" data-site-url="{{ site.url | escape }}" data-map-id="{{ site.visitor_stats.clustrmaps_id | escape }}">
   <div class="visitor-counts" data-visitor-counts>
-    <span>Page views <strong id="busuanzi_site_pv">—</strong></span>
-    <span>Visitors <strong id="busuanzi_site_uv">—</strong></span>
-    <a href="https://www.busuanzi.cc/doc.php" class="stats-credit" title="PV and UV are counted by Busuanzi; UV is the provider's visitor estimate.">Busuanzi</a>
+    <span>Page views <strong id="busuanzi_value_site_pv">—</strong></span>
+    <span>Visitors <strong id="busuanzi_value_site_uv">—</strong></span>
+    <a href="https://busuanzi.ibruce.info/" class="stats-credit" title="PV and UV are counted by Busuanzi; UV is the provider's visitor estimate.">Busuanzi</a>
   </div>
   <p class="stats-status" data-stats-status role="status">{% if stats_live %}Loading visitor statistics…{% else %}Visitor statistics are available on the live site.{% endif %}</p>
   {% if stats_live and site.visitor_stats.clustrmaps_id != '' and site.visitor_stats.clustrmaps_id %}<div class="visitor-map" data-visitor-map aria-label="Visitor location map"></div>{% endif %}

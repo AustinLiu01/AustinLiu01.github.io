@@ -11,7 +11,7 @@
   }
 
   const counts = root.querySelector('[data-visitor-counts]');
-  const hasCounts = () => ['busuanzi_site_pv', 'busuanzi_site_uv'].every(id =>
+  const hasCounts = () => ['busuanzi_value_site_pv', 'busuanzi_value_site_uv'].every(id =>
     /^\d[\d,]*$/.test(document.getElementById(id).textContent.trim()));
   let timeout;
   const observer = new MutationObserver(() => {
@@ -22,13 +22,13 @@
   });
   const unavailable = () => {
     clearTimeout(timeout);
-    observer.disconnect();
     status.textContent = 'Visitor statistics are temporarily unavailable.';
   };
   observer.observe(counts, {childList: true, characterData: true, subtree: true});
   timeout = setTimeout(unavailable, 12000);
   const counter = document.createElement('script');
-  counter.src = 'https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js';
+  // The original provider uses JSONP, so its API does not require CORS headers.
+  counter.src = 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
   counter.async = true;
   counter.onerror = unavailable;
   document.head.appendChild(counter);

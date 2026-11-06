@@ -78,10 +78,11 @@ _config.dev.yml   本地预览配置
 
 ## 访客统计
 
-页尾通过 [Busuanzi](https://www.busuanzi.cc/doc.php) 显示访问量（PV）和访客估计值（UV），
+页尾通过[原版不蒜子](https://busuanzi.ibruce.info/)的 JSONP 接口显示访问量（PV）和访客估计值（UV），
 不追溯接入前的历史访问。UV 使用服务商口径，不等同于精确人数。
 统计仅在生产构建且访问域名与 `_config.yml` 的 `url` 一致时加载；
-开发构建、localhost 和其他域名的预览均不计数。服务不可用时显示提示。
+开发构建、localhost 和其他域名的预览均不计数。服务不可用时显示提示；延迟返回的数据可恢复显示。
+此前使用的 `cdn.busuanzi.cc` 接口缺少 CORS 响应头，已切换服务，两个服务的历史统计不互通。
 
 地域地图使用 ClustrMaps，需要为自己的正式网址生成组件：
 
