@@ -19,7 +19,7 @@ internships:
     start: "2025-12"
     end: "2026-05"
     period: Dec 2025 – May 2026
-    summary: Explored architectures for ByteDance's in-house GPGPUs.
+    summary: Formally modeled and verified memory consistency for in-house chips and explored in-house GPGPU architectures.
   - company: Tencent
     team: TEG · AI Data Platform
     program: Talent program / 青云计划
