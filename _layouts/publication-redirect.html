@@ -1,0 +1,15 @@
+{% assign target = '/' | absolute_url | append: '#paper-' %}
+{% assign paper_slug = page.slug | slugify %}
+{% assign target = target | append: paper_slug %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }}</title>
+    <link rel="canonical" href="{{ target | escape }}">
+    <meta http-equiv="refresh" content="0; url={{ target | escape }}">
+    <meta name="robots" content="noindex">
+  </head>
+  <body><p>This publication is listed on <a href="{{ target | escape }}">my homepage</a>.</p></body>
+</html>

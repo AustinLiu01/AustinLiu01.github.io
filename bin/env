@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Shared environment for the project's local commands.
+set -euo pipefail
+
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$PROJECT_ROOT"
+
+if [[ -x "$PROJECT_ROOT/.local/portable-ruby/3.4.5/bin/ruby" ]]; then
+  export PATH="$PROJECT_ROOT/.local/portable-ruby/3.4.5/bin:$PATH"
+fi
+
+if ! ruby -e 'exit(Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.2"))' 2>/dev/null; then
+  echo "Ruby 3.2 or newer is required. Run bash bin/setup first." >&2
+  exit 1
+fi
+
+export GEM_HOME="$PROJECT_ROOT/vendor/bundle/ruby/$(ruby -rrbconfig -e 'print RbConfig::CONFIG["ruby_version"]')"
+export GEM_PATH="$GEM_HOME:$(ruby -e 'print Gem.default_dir')"
+export PATH="$GEM_HOME/bin:$PATH"
+export BUNDLE_USER_HOME="$PROJECT_ROOT/.local/bundle"
+unset BUNDLE_PATH
+export BUNDLE_PATH__SYSTEM=true
+# Let Bundler reuse the standard gems bundled with the selected Ruby runtime.
+export BUNDLE_DISABLE_SHARED_GEMS=false

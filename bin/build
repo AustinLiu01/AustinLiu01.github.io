@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+source "$(dirname "${BASH_SOURCE[0]}")/env"
+export JEKYLL_ENV=production
+exec ruby -S bundle exec jekyll build --config _config.yml --destination .local/production-site "$@"

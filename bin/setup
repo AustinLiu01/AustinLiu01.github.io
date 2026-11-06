@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$PROJECT_ROOT"
+
+if [[ ! -x .local/portable-ruby/3.4.5/bin/ruby ]] &&
+   ! ruby -e 'exit(Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.2"))' 2>/dev/null; then
+  if [[ "$(uname -s)" != Darwin || "$(uname -m)" != arm64 ]]; then
+    echo "Install Ruby 3.2 or newer, then run bash bin/setup again." >&2
+    exit 1
+  fi
+  xcode-select -p >/dev/null
+  mkdir -p .local/downloads
+  archive=".local/downloads/portable-ruby-3.4.5.tar.gz"
+  curl -fL --retry 2 --connect-timeout 15 --max-time 300 \
+    -H 'Authorization: Bearer QQ==' \
+    https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:20fa657858e44a4b39171d6e4111f8a9716eb62a78ebbd1491d94f90bb7b830a \
+    -o "$archive"
+  echo "20fa657858e44a4b39171d6e4111f8a9716eb62a78ebbd1491d94f90bb7b830a  $archive" | shasum -a 256 -c -
+  tar -xzf "$archive" -C .local
+fi
+
+source "$PROJECT_ROOT/bin/env"
+ruby -v
+ruby -S bundle install
+echo "Ready. Run bash bin/serve and visit http://localhost:4000"

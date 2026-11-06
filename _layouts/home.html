@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#about">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-name" href="{{ '/' | relative_url }}">{{ site.data.home.name_en }}</a>
+        <nav aria-label="Main navigation">
+          {% for item in site.data.navigation.main %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endfor %}
+        </nav>
+      </header>
+      <main id="main">
+        <section class="intro" id="about" aria-labelledby="profile-name">
+          <div class="intro-copy">
+            <h1 id="profile-name">{{ site.data.home.name_en }} <span lang="zh-Hans">{{ site.data.home.name_zh }}</span></h1>
+            <p class="position">{{ site.data.home.position }}</p>
+            <div class="bio">{{ content }}</div>
+          </div>
+          <aside class="profile-sidebar" aria-label="Photo and profiles">
+            <figure class="portrait">
+              <img src="{{ site.author.avatar | prepend: '/images/' | relative_url }}" alt="Portrait of Changxu Liu" width="168" height="210" fetchpriority="high">
+              <figcaption>{{ site.data.home.location }}</figcaption>
+            </figure>
+            <ul class="profile-links" aria-label="Contact and academic profiles">
+              <li><a href="mailto:{{ site.author.email }}"><img src="{{ '/images/profile-icons/envelope.svg' | relative_url }}" alt="" width="16" height="16" aria-hidden="true">Email</a></li>
+              {% if site.author.googlescholar %}<li><a href="{{ site.author.googlescholar | escape }}"><img src="{{ '/images/profile-icons/google-scholar.svg' | relative_url }}" alt="" width="16" height="16" aria-hidden="true">Google Scholar</a></li>{% endif %}
+              {% if site.author.orcid %}<li><a href="{{ site.author.orcid | escape }}"><img src="{{ '/images/profile-icons/orcid.svg' | relative_url }}" alt="" width="16" height="16" aria-hidden="true">ORCID</a></li>{% endif %}
+              {% if site.author.github %}<li><a href="https://github.com/{{ site.author.github }}"><img src="{{ '/images/profile-icons/github.svg' | relative_url }}" alt="" width="16" height="16" aria-hidden="true">GitHub</a></li>{% endif %}
+              {% if site.author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><img src="{{ '/images/profile-icons/linkedin.svg' | relative_url }}" alt="" width="16" height="16" aria-hidden="true">LinkedIn</a></li>{% endif %}
+            </ul>
+          </aside>
+          {% if site.data.home.opportunity %}<p class="opportunity">{{ site.data.home.opportunity }}</p>{% endif %}
+        </section>
+        <section class="section" id="news" aria-labelledby="news-title">
+          <h2 id="news-title">News</h2>
+          <ul class="news-list">
+            {% for item in site.data.home.news %}
+            <li><time datetime="{{ item.date }}">{{ item.label }}</time><span>{% if item.icon %}<span class="news-icon" aria-hidden="true">{{ item.icon | escape }}</span>{% endif %}{{ item.text | escape }}{% if item.url %} <a href="{{ item.url | escape }}" aria-label="Read more: {{ item.text | escape }}">Read more <span aria-hidden="true">↗</span></a>{% endif %}</span></li>
+            {% endfor %}
+          </ul>
+        </section>
+        <section class="section" id="experience" aria-labelledby="experience-title">
+          <h2 id="experience-title">Internship Experience</h2>
+          <div class="experience-list">
+            {% for item in site.data.home.internships %}
+            <article class="experience">
+              <p class="period"><time datetime="{{ item.start }}">{{ item.period }}</time></p>
+              <div class="experience-content">
+                <h3>{{ item.company }}</h3>
+                <p class="team">{{ item.team }}</p>
+                {% if item.program %}<p class="program">{{ item.program }}</p>{% endif %}
+                <ul class="experience-bullets">{% for point in item.bullets %}<li>{{ point | escape }}</li>{% endfor %}</ul>
+              </div>
+            </article>
+            {% endfor %}
+          </div>
+        </section>
+        <section class="section" id="research" aria-labelledby="research-title">
+          <h2 id="research-title">Research &amp; Publications</h2>
+          <ul class="research-focus">
+            {% for item in site.data.home.research %}<li><strong>{{ item.title }}.</strong> {{ item.description }}</li>{% endfor %}
+          </ul>
+          <div class="publications">
+            {% assign papers = site.publications | sort: 'date' | reverse %}
+            {% assign current_year = '' %}
+            {% for paper in papers %}
+              {% assign year = paper.date | date: '%Y' %}
+              {% if year != current_year %}
+                {% unless forloop.first %}</div></div>{% endunless %}
+                <div class="publication-year"><h3 class="year">{{ year }}</h3><div class="year-papers">
+                {% assign current_year = year %}
+              {% endif %}
+              {% include publication-compact.html paper=paper %}
+              {% if forloop.last %}</div></div>{% endif %}
+            {% endfor %}
+          </div>
+          <p class="contribution-note">* Equal contribution.</p>
+        </section>
+      </main>
+      {% include visitor-stats.html %}
+      <footer class="site-footer">
+        <p>© {{ site.time | date: '%Y' }} {{ site.data.home.name_en }}</p>
+        <p>Last updated <time datetime="{{ site.data.home.last_updated }}">{{ site.data.home.last_updated | date: '%b %-d, %Y' }}</time></p>
+        <a href="#about">Back to top ↑</a>
+      </footer>
+    </div>
+  </body>
+</html>

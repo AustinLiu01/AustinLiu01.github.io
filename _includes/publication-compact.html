@@ -1,0 +1,8 @@
+{% assign paper = include.paper %}
+{% assign ccf_rank = site.data.ccf.venues[paper.venue_short] %}
+<article class="publication" id="paper-{{ paper.slug | slugify }}">
+  <h4><a href="{{ paper.paperurl | escape }}">{{ paper.title | escape }}</a></h4>
+  <p class="authors">{% for author in paper.authors %}{% if author == site.name %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% if paper.equal_authors contains author %}<sup aria-label="equal contribution">*</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+  <p class="publication-meta"><span>{{ paper.venue_short | escape }} · {% if paper.date_precision == 'year' %}<time datetime="{{ paper.date | date: '%Y' }}">{{ paper.date | date: '%Y' }}</time>{% else %}<time datetime="{{ paper.date | date: '%Y-%m' }}">{{ paper.date | date: '%b %Y' }}</time>{% endif %}</span>{% if ccf_rank %}<a class="ccf-rank" href="{{ site.data.ccf.source }}" aria-label="CCF category {{ ccf_rank }} venue">CCF-{{ ccf_rank }}</a>{% endif %}<span class="venue-name">{{ paper.venue_name | escape }}</span><a href="{{ paper.paperurl | escape }}" aria-label="{{ paper.link_label | default: 'Online' }}: {{ paper.title | escape }}">{{ paper.link_label | default: 'Online' }} <span aria-hidden="true">↗</span></a></p>
+  <p class="paper-summary">{{ paper.summary | escape }}</p>
+</article>

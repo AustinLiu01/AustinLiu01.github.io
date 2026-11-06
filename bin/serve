@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+source "$(dirname "${BASH_SOURCE[0]}")/env"
+export JEKYLL_ENV=development
+exec ruby -S bundle exec jekyll serve --config _config.yml,_config.dev.yml "$@"

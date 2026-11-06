@@ -1,19 +1,17 @@
 ---
+layout: home
 permalink: /
-title: "About Me"
-excerpt: "About Me"
-author_profile: true
-redirect_from: 
+title: "Welcome to Changxu Liu's Personal Website"
+excerpt: "Fifth-year Ph.D. student at Fudan University, interested in AI infrastructure, efficient model inference, and hardware–software co-design. Seeking industry opportunities starting in fall 2027."
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I'm a fifth-year Ph.D. Candidate from [School of Microelectronics](https://sme.fudan.edu.cn/), [Fudan University](https://www.fudan.edu.cn/), Shanghai, P.R.C. My work primarily focuses on topics such as the optimization of inference systems for large language models and hardware-software co-design for these models. During the early stages of my doctoral studies, my research centered on hardware-software co-design and accelerator design for privacy-preserving computing.
+I am a fifth-year Ph.D. student at the [School of Microelectronics, Fudan University](https://sme.fudan.edu.cn/), advised by [Prof. Fan Yang](https://ephonic.github.io/). I expect to graduate in 2027. I received my B.E. from [Wuhan University](https://www.whu.edu.cn/) in 2022.
 
-I am very fortunate to be advised by [Prof. Fan Yang](https://ephonic.github.io/) of CAD Lab from [School of Microelectronics](https://sme.fudan.edu.cn/), [Fudan University](https://www.fudan.edu.cn/). Before that, I received my bachelor's degree from [Wuhan University](https://www.whu.edu.cn/), Hubei, P.R.C. in 2022. You can visit my [Google Scholar homepage](https://scholar.google.com/citations?user=M0BekPkAAAAJ&hl=en).
+My goal is to build **efficient and elegant LLM inference systems**. My recent work focuses on improving inference performance through advances in frameworks and algorithms, making LLMs more efficient to deploy and serve. I also have hands-on experience optimizing GPU kernels.
 
-I was an AI infrastructure summer camp intern with the Baige AI Team at Baidu-ACG, where I focused on optimizing LLM inference systems for low latency and high throughput on NVIDIA GPGPU platforms. More previously, I interned with the AI ​​ASIC design team at ByteDance-PicoHeart and was a Project Up (青云计划) intern at Tencent-TEG specialized in AI hardware acceleration solutions. My work centers on optimizing inference systems for LLMs and developing inference frameworks and engines. I am currently seeking employment opportunities with a start date in the fall of 2027.
+My earlier research focused on computer architecture and chip design, including hardware–software co-design and accelerators for AI and privacy-preserving computing. This background gives me a cross-layer perspective on system optimization: it helps me understand how decisions at the framework level affect memory access, the balance between computation and communication, and contention for hardware resources.
 
-
-
-
+I am also interested in **AI agents**, especially their use in **chip design**. I would like to explore how agents can help engineers work through complex design tasks and improve productivity.

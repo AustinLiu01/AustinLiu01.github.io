@@ -1,0 +1,87 @@
+# Change this when content changes, not on every build.
+last_updated: "2026-11-06"
+name_en: Changxu Liu
+name_zh: 刘昶旭
+position: Fifth-year Ph.D. student · Fudan University
+location: Shanghai, China
+opportunity: I am seeking full-time industry roles in AI infrastructure and LLM inference systems, starting in fall 2027. I would love to connect with teams turning research ideas into efficient, reliable systems for real-world use.
+
+internships:
+  - company: Baidu
+    team: ACG · Baige AI Team / 百舸
+    program: AI Infrastructure · Talent program
+    start: "2026-05"
+    end: "2026-09"
+    period: May – Sep 2026
+    bullets:
+      - Explored speculative decoding algorithms to improve LLM inference efficiency.
+      - Implemented and optimized these methods in an inference framework, with a focus on end-to-end performance.
+  - company: ByteDance
+    team: Data-PH · AI Chip Team
+    start: "2025-12"
+    end: "2026-05"
+    period: Dec 2025 – May 2026
+    bullets:
+      - Modeled and verified memory consistency for in-house AI chips.
+      - Investigated architecture and microarchitecture options for ByteDance's in-house GPGPU development.
+  - company: Tencent
+    team: TEG · AI Data Platform
+    program: Talent program / 青云计划
+    start: "2025-06"
+    end: "2025-11"
+    period: Jun – Nov 2025
+    bullets:
+      - Contributed to the research and evaluation of custom AI-chip architecture proposals for Tencent's in-house models.
+      - Optimized inference for large language models and models used for data processing in production pipelines.
+      - Explored and optimized attention mechanisms in diffusion-based video generation models.
+
+research:
+  - title: AI infrastructure and model inference
+    description: Improving LLM inference performance through research on frameworks and algorithms.
+  - title: Hardware–software co-design
+    description: Computer architecture and accelerator design for AI and privacy-preserving computing.
+
+# News dates below were provided by Changxu Liu.
+# Publication metadata in _publications is maintained separately.
+news:
+  - date: "2026-09-21"
+    label: Sep 2026
+    icon: "📄"
+    text: Our work at Baidu on tree-structured speculative decoding for DeepSeek-V4 is now available as an arXiv technical report.
+    url: https://arxiv.org/abs/2609.24698
+  - date: "2026-09"
+    label: Sep 2026
+    icon: "🎉"
+    text: SparseBits was accepted for publication in IEEE TCAD.
+    url: https://ieeexplore.ieee.org/abstract/document/11686044/
+  - date: "2026-08"
+    label: Aug 2026
+    icon: "🎉"
+    text: SATLLM was accepted for publication in ACM TODAES.
+    url: https://doi.org/10.1145/3844511
+  - date: "2026-05"
+    label: May 2026
+    icon: "🚀"
+    text: Joined the Baige AI Team at Baidu ACG to work on LLM inference systems.
+  - date: "2026-02"
+    label: Feb 2026
+    icon: "🎉"
+    text: HierPAS was accepted to DAC 2026.
+    url: https://dl.acm.org/doi/10.1145/3770743.3803937
+  - date: "2025-12"
+    label: Dec 2025
+    icon: "🚀"
+    text: Joined ByteDance's AI chip team to work on in-house computer architecture research.
+  - date: "2025-10"
+    label: Oct 2025
+    icon: "🏅"
+    text: Received the National Scholarship for Doctoral Students (博士生国家奖学金).
+  - date: "2025-10"
+    label: Oct 2025
+    icon: "🎉"
+    text: A Fault-Aware Architecture for Reliable Sparse Matrix Multiplication was accepted for publication in IEEE TCAD.
+    url: https://ieeexplore.ieee.org/abstract/document/11195802/
+  - date: "2025-06"
+    label: Jun 2025
+    icon: "🚀"
+    text: Joined Tencent's AI Data Platform team in TEG through the Talent program (青云计划).

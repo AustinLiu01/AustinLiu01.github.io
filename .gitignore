@@ -1,5 +1,11 @@
 # Ignore the contents of the _site directory
 _site/
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
+# Local tools, installed gems, and build caches
+/.local/
+/.bundle/
+/vendor/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+node_modules/
