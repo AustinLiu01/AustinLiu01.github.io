@@ -56,7 +56,7 @@
                 <h3>{{ item.company }}</h3>
                 <p class="team">{{ item.team }}</p>
                 {% if item.program %}<p class="program">{{ item.program }}</p>{% endif %}
-                <ul class="experience-bullets">{% for point in item.bullets %}<li>{{ point | escape }}</li>{% endfor %}</ul>
+                <p>{{ item.summary | escape }}</p>
               </div>
             </article>
             {% endfor %}

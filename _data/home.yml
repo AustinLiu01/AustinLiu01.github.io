@@ -13,27 +13,20 @@ internships:
     start: "2026-05"
     end: "2026-09"
     period: May – Sep 2026
-    bullets:
-      - Explored speculative decoding algorithms to improve LLM inference efficiency.
-      - Implemented and optimized these methods in an inference framework, with a focus on end-to-end performance.
+    summary: Worked on improving the performance of LLM inference systems.
   - company: ByteDance
     team: Data-PH · AI Chip Team
     start: "2025-12"
     end: "2026-05"
     period: Dec 2025 – May 2026
-    bullets:
-      - Modeled and verified memory consistency for in-house AI chips.
-      - Investigated architecture and microarchitecture options for ByteDance's in-house GPGPU development.
+    summary: Explored architectures for ByteDance's in-house GPGPUs.
   - company: Tencent
     team: TEG · AI Data Platform
     program: Talent program / 青云计划
     start: "2025-06"
     end: "2025-11"
     period: Jun – Nov 2025
-    bullets:
-      - Contributed to the research and evaluation of custom AI-chip architecture proposals for Tencent's in-house models.
-      - Optimized inference for large language models and models used for data processing in production pipelines.
-      - Explored and optimized attention mechanisms in diffusion-based video generation models.
+    summary: Researched custom AI-chip architectures and optimized model inference.
 
 research:
   - title: AI infrastructure and model inference

@@ -69,9 +69,6 @@ h1 span { display: inline-block; margin-left: 10px; font-size: 25px; font-weight
 .experience .program { margin-top: 4px; font-size: 12px; color: var(--muted); }
 .experience-content { min-width: 0; }
 .experience .team { margin-top: 3px; color: var(--muted); font-size: 13px; }
-.experience-bullets { margin: 9px 0 0; padding-left: 18px; font-size: 14px; }
-.experience-bullets li + li { margin-top: 5px; }
-.experience-bullets li::marker { color: #95a6b2; }
 .research-focus { display: grid; gap: 7px; padding-left: 19px; margin: 0 0 30px; font-size: 14px; }
 .research-focus li::marker { color: #95a6b2; }
 .publication-year { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; }
