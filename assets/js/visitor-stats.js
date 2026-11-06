@@ -36,6 +36,7 @@
   const map = root.querySelector('[data-visitor-map]');
   if (map) {
     const mapStatus = map.querySelector('[data-map-status]');
+    mapStatus.textContent = 'Loading visitor map…';
     const link = document.createElement('a');
     link.href = map.dataset.statsUrl;
     link.target = '_blank';
@@ -58,6 +59,6 @@
     // Load only after the live-site check above; local previews never count.
     image.src = map.dataset.imageUrl;
     link.appendChild(image);
-    map.appendChild(link);
+    map.insertBefore(link, map.firstChild);
   }
 })();

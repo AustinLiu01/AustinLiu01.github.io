@@ -9,8 +9,9 @@
   <p class="stats-status" data-stats-status role="status">{% if stats_live %}Loading visitor statistics…{% else %}Visitor statistics are available on the live site.{% endif %}</p>
   {% if stats_live and site.visitor_stats.flagcounter_image_url != '' and site.visitor_stats.flagcounter_image_url and site.visitor_stats.flagcounter_stats_url != '' and site.visitor_stats.flagcounter_stats_url %}
   <div class="visitor-map" data-visitor-map data-image-url="{{ site.visitor_stats.flagcounter_image_url | escape }}" data-stats-url="{{ site.visitor_stats.flagcounter_stats_url | escape }}" aria-label="Visitor location map">
-    <p class="stats-status" data-map-status role="status">Loading visitor map…</p>
+    <p class="stats-status" data-map-status role="status"></p>
+    <p class="stats-status"><a href="{{ site.visitor_stats.flagcounter_stats_url | escape }}" target="_blank" rel="noopener noreferrer" data-map-details>View visitor statistics ↗</a></p>
   </div>
   {% endif %}
 </aside>
-<script src="{{ '/assets/js/visitor-stats.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/visitor-stats.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
